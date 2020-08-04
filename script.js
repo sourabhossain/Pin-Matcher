@@ -11,8 +11,12 @@ document.querySelector("#generate-pin").addEventListener("click", () => {
 document.querySelector(".submit-btn").addEventListener("click", () => {
     const generatedPin = document.querySelector("#pin-output").value;
     const inputNumber = document.querySelector("#numberOutput").value;
-
-    if (generatedPin === inputNumber && generatedPin !== 0) {
+    
+    if (generatedPin == "") {
+        alert("Generate pin is empty!");
+    } else if(inputNumber == "") {
+        alert("Insert your pin is empty!");
+    } else if (generatedPin === inputNumber && generatedPin !== 0) {
         document.querySelector("#matched-message").style.display = "block";
         document.querySelector("#pin-output").value = "";
         document.querySelector("#numberOutput").value = "";
@@ -24,7 +28,7 @@ document.querySelector(".submit-btn").addEventListener("click", () => {
 
         const chanceCount = document.querySelector("#chance-count").innerHTML;
         const chanceNumber = parseInt(chanceCount) - 1;
-        
+
         document.querySelector("#chance-count").innerHTML = chanceNumber;
 
         if (chanceNumber === 0) {

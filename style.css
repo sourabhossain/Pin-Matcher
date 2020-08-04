@@ -31,6 +31,8 @@ body {
     text-align: center;
 }
 
+.generate-btn:hover 
+
 .generate-btn:focus {
     outline: none;
     box-shadow: none;
