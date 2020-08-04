@@ -21,5 +21,14 @@ document.querySelector(".submit-btn").addEventListener("click", () => {
     } else {
         document.querySelector("#error-message").style.display = "block";
         document.querySelector("#numberOutput").value = "";
+
+        const chanceCount = document.querySelector("#chance-count").innerHTML;
+        const chanceNumber = parseInt(chanceCount) - 1;
+        
+        document.querySelector("#chance-count").innerHTML = chanceNumber;
+
+        if (chanceNumber === 0) {
+            document.querySelector(".submit-btn").disabled = true;
+        }
     }
 });
