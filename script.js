@@ -33,6 +33,7 @@ document.querySelector(".submit-btn").addEventListener("click", () => {
 
         if (chanceNumber === 0) {
             document.querySelector(".submit-btn").disabled = true;
+            document.querySelector(".submit-btn").innerText = "Blocked for 24 hours";
         }
     }
 });
