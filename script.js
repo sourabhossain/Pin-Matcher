@@ -4,7 +4,7 @@ document.querySelector("#generate-pin").addEventListener("click", () => {
     document.querySelector("#pin-output").value = generateRandomNumber;
     document.querySelector("#error-message").style.display = "none";
     document.querySelector("#matched-message").style.display = "none";
-    document.querySelector(".action-left").style.display = "block";
+    document.querySelector(".action-left").style.display = "none";
 });
 
 // submit button event handler
@@ -25,6 +25,7 @@ document.querySelector(".submit-btn").addEventListener("click", () => {
     } else {
         document.querySelector("#error-message").style.display = "block";
         document.querySelector("#numberOutput").value = "";
+        document.querySelector(".action-left").style.display = "block";
 
         const chanceCount = document.querySelector("#chance-count").innerHTML;
         const chanceNumber = parseInt(chanceCount) - 1;
