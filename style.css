@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-
+ 
 body {
     background: #10101B;
     height: 100vh;
@@ -142,4 +142,5 @@ input[type='text']:focus {
 .action-left {
     color: #FF3C5F;
     margin-top: 10px;
+    display: none;
 }
