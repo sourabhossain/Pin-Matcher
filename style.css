@@ -1,7 +1,8 @@
 * {
     box-sizing: border-box;
 }
- 
+
+html,
 body {
     background: #10101B;
     height: 100vh;
@@ -116,7 +117,6 @@ input[type='text']:focus {
 .submit-btn:hover {
     transform: scale(1.2);
     background-color: #09a2df;
-    
 }
 
 .notify {
