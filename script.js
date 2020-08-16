@@ -14,7 +14,7 @@ document.querySelector(".submit-btn").addEventListener("click", () => {
     
     if (generatedPin == "") {
         alert("Generate pin is empty!");
-    } else if(inputNumber == "") {
+    } else if (inputNumber == "") {
         alert("Insert your pin is empty!");
     } else if (generatedPin === inputNumber && generatedPin !== 0) {
         document.querySelector("#matched-message").style.display = "block";
